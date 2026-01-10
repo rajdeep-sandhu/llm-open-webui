@@ -3,7 +3,7 @@ name = "llm-open-webui"
 version = "0.1.0"
 description = "Local Open WebUI install."
 readme = "README.md"
-requires-python = ">=3.13.5, <3.14"
+requires-python = ">=3.11, <3.12"
 dependencies = [
     "open-webui>=0.6.43",
 ]
