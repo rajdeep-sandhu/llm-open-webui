@@ -1,6 +1,7 @@
 # Local installation of Open WebUI
 
 - This repository is a brief instruction list for installing Open WebUI locally.
+- Version 0.7.2 (at the time of writing) requires Python 3.11.
 
 ## Install as a project
 
