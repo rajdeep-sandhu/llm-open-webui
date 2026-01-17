@@ -14,6 +14,7 @@
 - `open-webui-project.bat` sets these up and runs `uv run open-webui serve`.
 - Ollama should be running to run local models.
 - The server will be available at [http://localhost:8080](http://localhost:8080)
+- Shut down the server using `ctrl`  `c` in the terminal.
 
 ## Install as a tool
 
@@ -21,3 +22,4 @@
 - The same principles apply for `WEBUI_SECRET_KEY`.
 - - `open-webui-tool.bat` sets the environment variables up and runs `uvx --python 3.11 open-webui@latest serve`.
 - The server will be available at [http://localhost:8080](http://localhost:8080)
+- Shut down the server using `ctrl`  `c` in the terminal.
