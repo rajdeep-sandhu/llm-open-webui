@@ -23,3 +23,13 @@
 - - `open-webui-tool.bat` sets the environment variables up and runs `uvx --python 3.11 open-webui@latest serve`.
 - The server will be available at [http://localhost:8080](http://localhost:8080)
 - Shut down the server using `ctrl`  `c` in the terminal.
+
+## Install as a Docker container
+
+- This is also the preferred way, as it keeps the app and its dependencies isolated from the host.
+- `DATA_DIR` is set to `/app/backend/data` within the container, which uses `$HOME\open-webui\data` as a bind mount.
+- `WEBUI_SECRET_KEY_FILE` is available to the startup script within the container and is set to `/app/backend/data/.webui_secret_key`. (NB The docker command cannot interpolate variables supplied by `-e`, so the full path needs to be specified instead of using `DATA_DIR`)
+- `open-webui-docker-run.ps1` sets up the container and runs it.
+- The server will be available at [http://localhost:3000](http://localhost:3000)
+- To stop the server and container, use `docker container stop open-webui`
+- To run the container again, use `docker container restart open-webui`
