@@ -26,7 +26,7 @@
 
 ## Install as a tool
 
-- This is the preferred way to run a local install.
+- This is the preferred way to run a local install. It creates an isolated ephemeral environment. However, the disadvantage is the prolonged delay because the environment is created on each run as a tool.
 - The same principles apply for `WEBUI_SECRET_KEY`.
 - - `open-webui-tool.bat` sets the environment variables up and runs `uvx --python 3.11 open-webui@latest serve`.
 - The server will be available at [http://localhost:8080](http://localhost:8080)
