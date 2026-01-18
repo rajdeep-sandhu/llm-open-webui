@@ -2,6 +2,8 @@
 
 - This repository is a brief instruction list for installing Open WebUI locally.
 - Version 0.7.2 (at the time of writing) requires Python 3.11.
+- First install and run will take long due to images/files being downloaded and environments being set up.
+- Subsequent runs are quicker, but the server might still take up to 2-4 minutes to start.
 
 - For all modes of installation, ensure the following:
   - The directory `%USERPROFILE%\open-webui\data` has already been created on the host.
