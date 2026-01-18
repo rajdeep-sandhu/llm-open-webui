@@ -44,7 +44,7 @@
 
 ## Install as a Docker container
 
-- This is perhaps better than installing as a project or as a tool, as it keeps the app and its dependencies isolated from the host. The disadvantage is the overhead of running Docker to run the container.
+- This is  preferred over installing locally, as it is independent of the host and keeps the app and its dependencies sandboxed. It obviates the need to install python or `uv` locally. The disadvantage is the overhead of running Docker to run the container.
 - `DATA_DIR` is set to `/app/backend/data` within the container, which uses `$HOME\open-webui\data` as a bind mount.
 - `WEBUI_SECRET_KEY_FILE` is available to the startup script within the container and is set to `/app/backend/data/.webui_secret_key`. (NB The docker command cannot interpolate variables supplied by `-e`, so the full path needs to be specified instead of using `DATA_DIR`)
 - `open-webui-docker-run.ps1` sets up the container and runs it.
