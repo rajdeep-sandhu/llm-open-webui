@@ -37,3 +37,9 @@
 - The server will be available at [http://localhost:3000](http://localhost:3000)
 - To stop the server and container, use `docker container stop open-webui`
 - To run the container again, use `docker container restart open-webui`
+
+## Install using Docker Compose
+
+- Start the service in detached mode using `docker compose up -d`
+- The server will be available at [http://localhost:3000](http://localhost:3000)
+- Stop the service using `docker compose down`
