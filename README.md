@@ -2,7 +2,7 @@
 
 - This repository is a brief instruction list for installing Open WebUI locally.
 - Version 0.7.2 (at the time of writing) requires Python 3.11.
-- First install and run will take long due to images/files being downloaded and environments being set up.
+- The first install and run will take long due to images/files being downloaded and environments being set up.
 - Subsequent runs are quicker, but the server might still take up to 2-4 minutes to start.
 
 - For all modes of installation, ensure the following:
@@ -34,7 +34,7 @@
 
 ## Install as a `uv tool`
 
-- Compared with running as a `uvx` tool, this installs `open-webui` into `uv`'s central cache.
+- Compared with running as a `uvx` tool, this installs `open-webui` into `uv`'s central cache. This is quicker as it obviates the need to create the environment on each occasion.
 - The same principles apply for `WEBUI_SECRET_KEY`.
 - Install using `uv tool install --python 3.11 open-webui@latest`
 - Upgrade using `uv tool upgrade open-webui`
