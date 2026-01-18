@@ -1,6 +1,16 @@
 # Local installation of Open WebUI
 
 - This repository is a brief instruction list for installing Open WebUI locally.
+
+## Aim
+
+- Brief instructions for different ways of installing `open-webui`.
+- Setting up **environment variables for data persistence**.
+- Demonstration of `uv tool` and `uvx`.
+- Demonstration of installing using `docker` and `docker compose`.
+
+## Notes
+
 - Version 0.7.2 (at the time of writing) requires Python 3.11.
 - The first install and run will take long due to images/files being downloaded and environments being set up.
 - Subsequent runs are quicker, but the server might still take up to 2-4 minutes to start.
