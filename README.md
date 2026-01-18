@@ -3,6 +3,10 @@
 - This repository is a brief instruction list for installing Open WebUI locally.
 - Version 0.7.2 (at the time of writing) requires Python 3.11.
 
+- For all modes of installation, ensure the following:
+  - The directory `%USERPROFILE%\open-webui\data` has already been created on the host.
+  - To use Ollama, it needs to be installed separately. ALternatively, a combined image may be used to build the container.
+
 ## Install as a project
 
 - This is for illustration only and is not the recommended method. Ideally, use the tool or docker approach.
