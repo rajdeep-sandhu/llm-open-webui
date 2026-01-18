@@ -28,7 +28,17 @@
 
 - This is the preferred way to run a local install compared with a project. It creates an isolated ephemeral environment. However, the disadvantage is the prolonged delay because the environment is created on each run as a tool.
 - The same principles apply for `WEBUI_SECRET_KEY`.
-- `open-webui-uvx.bat` sets the environment variables up and runs `uvx --python 3.11 open-webui@latest serve`.
+- `open-webui-uvx.bat` sets the environment variables up and runs `uvx --python 3.11 open-webui@latest serve`
+- The server will be available at [http://localhost:8080](http://localhost:8080)
+- Shut down the server using `ctrl`  `c` in the terminal.
+
+## Install as a `uv tool`
+
+- Compared with running as a `uvx` tool, this installs `open-webui` into `uv`'s central cache.
+- The same principles apply for `WEBUI_SECRET_KEY`.
+- Install using `uv tool install --python 3.11 open-webui@latest`
+- Upgrade using `uv tool upgrade open-webui`
+- `open-webui-uv-tool.bat` sets the environment variables up and runs `open-webui`
 - The server will be available at [http://localhost:8080](http://localhost:8080)
 - Shut down the server using `ctrl`  `c` in the terminal.
 
