@@ -48,7 +48,7 @@
 - The same principles apply for `WEBUI_SECRET_KEY`.
 - Install using `uv tool install --python 3.11 open-webui@latest`
 - Upgrade using `uv tool upgrade open-webui`
-- `open-webui-uv-tool.bat` sets the environment variables up and runs `open-webui`
+- `open-webui-uv-tool.bat` sets the environment variables up and runs `open-webui serve`
 - The server will be available at [http://localhost:8080](http://localhost:8080)
 - Shut down the server using `ctrl`  `c` in the terminal.
 
